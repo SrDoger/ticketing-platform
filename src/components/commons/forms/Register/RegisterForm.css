@@ -1,0 +1,39 @@
+.container div{
+    padding-bottom: 20px;
+  }
+  input, textarea{
+    display: inline-block;
+    position: absolute;
+    width: auto;
+    height: 20px;
+    outline: none;
+    font-size: 0.8em;
+    line-height: 20px;
+    border-radius: 5px;
+    border: 1px solid #e365ff9b;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 0.1;
+  } 
+input:invalid, textarea:invalid{
+    color: #ff0000;
+    border: 1.5px solid #ff0000;
+    transition: 0.5s ease;
+} 
+input:valid, textarea:valid{
+    color: #66ff00;
+    border: 1.5px solid #66ff00;
+    transition: 0.5s ease;
+}
+  .container-left{
+    color: antiquewhite;
+    padding: 10px;
+    box-sizing: content-box;
+    width: auto;
+    height: 250px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+

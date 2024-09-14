@@ -1,0 +1,107 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.navbar ul {
+    height: 50px;
+    display: flex;
+}
+
+.icon-user{
+    height: 40px;
+    width: 40px;
+    align-self: center;
+    color: antiquewhite;
+    border-radius: 50px;
+}
+.right{
+    align-self: flex-end;
+    justify-self: left;
+}
+.icon-user:hover{
+    height: 40px;
+    width: 40px;
+    align-self: center;
+    background-color:#d38ffbbc;
+}
+
+/* Estilos de los elementos de la barra de navegación */
+.navbar ul li {
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #11101b00;
+    border-radius: 25px;
+}
+
+.navbar ul li:hover {
+    background-color: #d38ffbbc;
+}
+
+/* Estilos de los enlaces y botones de la barra de navegación */
+.navbar ul li a, .dropdown button {
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.2s ease;
+}
+
+
+/* Estilos del menú desplegable */
+.dropdown {
+    position: relative;
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content {
+    border: 1px solid #11101b;
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    background-color: #11101bbc;
+    min-width: 150px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+
+/* Estilos de los elementos del menú desplegable */
+.content .border {
+    border-bottom: 1px solid black;
+}
+
+.content .middle:hover, .content .top:hover, .content .bottom:hover {
+    background-color: #d38ffbbc;
+}
+
+.content .top:hover {
+    border-radius: 18px 18px 0px 0px;
+}
+
+.content .bottom:hover {
+    border-radius: 0px 0px 18px 18px;
+}
+
+/* Mostrar el menú desplegable al pasar el mouse */
+.dropdown:hover .content {
+    display: block;
+}
+
+/* Estilos del botón del menú desplegable */
+.dropdown button {
+    cursor: pointer;
+    color: antiquewhite;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
